@@ -27,16 +27,10 @@ app.on('ready', function() {
 
   // main.js
 
-
-
-
-
-
-
   // Open the devtools.
   // mainWindow.openDevTools();
 
-  // Emitted when the window is closed.
+
   mainWindow.on('closed', function() {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time

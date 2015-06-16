@@ -4,8 +4,25 @@
     <title>Hello World!</title>
   </head>
   <body>
-    <h1>Hello my name is Jaime!!</h1>
-    We are using io.js <script>document.write(process.version)</script>
-    and Electron <script>document.write(process.versions['electron'])</script>.
+
   </body>
+  <script src="http://fb.me/react-0.12.2.min.js"></script>
+  <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+
+  <script type="text/jsx">
+
+  var HelloMessage = React.createClass({
+    render: function () {
+      return <h1>Hello {this.props.message}!</h1>;
+    }
+    });
+
+    var pr = process.versions['electron'];
+
+    React.render(<HelloMessage message="World" />, document.body);
+  </script>
+
+ <!-- script>document.write(process.versions['electron'])</script -->
+ <!-- script>document.write(process.version)</script -->
+
 </html>
